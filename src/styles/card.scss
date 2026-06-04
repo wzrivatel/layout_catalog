@@ -10,11 +10,10 @@ body {
 }
 
 .card {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 408px;
+  padding: 33px 17px 17px;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #f3f3f3;
@@ -22,64 +21,62 @@ body {
   transition:
     transform 300ms ease,
     box-shadow 300ms ease;
-  z-index: 1;
 
   &__image {
-    position: absolute;
     width: 160px;
     height: 134px;
-    top: 33px;
-    left: 20px;
+    align-self: center;
+    margin-bottom: 40px;
+    object-fit: contain;
   }
 
   &__title {
     color: #060b35;
-    position: absolute;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-
-    width: 166px;
-    height: 36px;
-    top: 207px;
-    left: 17px;
+    margin-bottom: 4px;
 
     transition: color 300ms ease;
 
-    .card__title {
+    &:hover {
       color: #34568b;
     }
   }
 
   &__code {
-    position: absolute;
     color: #616070;
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-
-    width: 98px;
-    height: 14px;
-    top: 247px;
-    left: 17px;
+    margin-bottom: 16px;
   }
 
-  &__price {
-    position: absolute;
-    top: 317px;
-    left: 17px;
-    width: 166px;
-
+  &__rating {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 24px;
+
+    &-reviews {
+      color: #060b35;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
 
     &-label {
       color: #616070;
       font-weight: 400;
       font-size: 12px;
       line-height: 18px;
-      margin: 0;
     }
 
     &-value {
@@ -87,40 +84,14 @@ body {
       font-weight: 700;
       font-size: 16px;
       line-height: 18px;
-      margin: 0;
-    }
-  }
-
-  &__rating {
-    position: absolute;
-    width: 166px;
-    height: 16px;
-    top: 277px;
-    left: 17px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &-reviews {
-      color: #060b35;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 14px;
-      margin: 0;
     }
   }
 
   &__button {
-    position: absolute;
-    width: 166px;
+    width: 100%;
     height: 40px;
-    top: 351px;
-    left: 17px;
     border-radius: 5px;
     background-color: #00acdc;
-
-    box-sizing: border-box;
 
     display: flex;
     align-items: center;
