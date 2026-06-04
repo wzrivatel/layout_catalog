@@ -1,8 +1,7 @@
-$header-color: #fff;
-$text-color: #060b35;
-$selected-color: #00acdc;
 $header-font-size: 12px;
 $header-height: 60px;
+
+@import './variable';
 
 html {
   font-family: Roboto, Arial, sans-serif;
