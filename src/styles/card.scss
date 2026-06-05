@@ -16,7 +16,7 @@ body {
   width: 200px;
   padding: 32px 16px 16px;
   background-color: $color-white;
-  border-radius: 5px;
+  border-radius: $border-radius;
   border: 1px solid $color-border;
 
   transition:
@@ -40,7 +40,7 @@ body {
 
     transition: color 300ms ease;
 
-    &:hover {
+    &:hover &__title {
       color: $color-title-hover;
     }
   }
@@ -123,6 +123,6 @@ body {
   &:hover {
     transform: scale(1.2);
     z-index: 10;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px $shadow-color;
   }
 }
